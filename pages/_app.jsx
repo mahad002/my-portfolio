@@ -6,6 +6,8 @@ import Transition from "../components/Transition";
 
 import "../styles/globals.css";
 
+import 'react-tooltip/dist/react-tooltip.css'
+
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
 

@@ -1,24 +1,14 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import CountUp from "react-countup";
-import {
-  FaCss3,
-  FaFigma,
-  FaHtml5,
-  FaJs,
-  FaReact,
-  FaWordpress,
-  
-} from "react-icons/fa";
-import {
-  SiAdobephotoshop,
-  SiAdobexd,
-  SiFramer,
-  SiNextdotjs,
-} from "react-icons/si";
+import 'react-tooltip/dist/react-tooltip.css'
+import { Tooltip as ReactTooltip } from 'react-tooltip'
 import { RiFlutterFill } from "react-icons/ri";
 import { IoLogoFirebase } from "react-icons/io5";
-
+import { FaHtml5, FaCss3, FaJs, FaReact, FaWordpress, FaFigma, FaDocker, FaJava, FaPython, FaNodeJs, FaAngular } from "react-icons/fa";
+import { SiNextdotjs, SiFramer, SiAdobelightroom, SiAdobephotoshop, SiCanva, SiMysql, SiPostgresql, SiCplusplus, SiFirebase, SiSupabase, SiKubernetes, SiJenkins, SiSelenium, SiCypress, SiExpress } from "react-icons/si";
+import { DiDatabase } from "react-icons/di";
+import { AiOutlineGitlab } from "react-icons/ai";
 import Avatar from "../../components/Avatar";
 import Circles from "../../components/Circles";
 import { fadeIn } from "../../variants";
@@ -31,22 +21,68 @@ export const aboutData = [
       {
         title: "Web Development",
         icons: [
-          FaHtml5,
-          FaCss3,
-          FaJs,
-          FaReact,
-          SiNextdotjs,
-          SiFramer,
-          FaWordpress,
+          { name: "HTML5", icon: FaHtml5 },
+          { name: "CSS3", icon: FaCss3 },
+          { name: "JavaScript", icon: FaJs },
+          { name: "Angular", icon: FaAngular},
+          { name: "React", icon: FaReact },
+          { name: "Next.js", icon: SiNextdotjs },
+          { name: "WordPress", icon: FaWordpress }
         ],
       },
       {
         title: "UI/UX Design",
-        icons: [FaFigma, SiAdobexd, SiAdobephotoshop],
+        icons: [
+          { name: "Figma", icon: FaFigma },
+          { name: "Adobe Lightroom", icon: SiAdobelightroom  },
+          { name: "Adobe Photoshop", icon: SiAdobephotoshop },
+          { name: "Canva", icon: SiCanva },
+        ],
       },
       {
         title: "Mobile Development",
-        icons: [RiFlutterFill, IoLogoFirebase],
+        icons: [
+          { name: "Flutter", icon: RiFlutterFill },
+          { name: "Firebase", icon: IoLogoFirebase }
+        ],
+      },
+      {
+        title: "Backend Development",
+        icons: [
+          { name: "Node.js", icon: FaNodeJs },
+          { name: "Express.js", icon: SiExpress },
+          { name: "SQL", icon: DiDatabase },
+          { name: "MySQL", icon: SiMysql },
+          { name: "PostgreSQL", icon: SiPostgresql },
+          { name: "Odoo", icon: AiOutlineGitlab },
+          { name: "Java", icon: FaJava },
+          { name: "Python", icon: FaPython },
+          { name: "C/C++", icon: SiCplusplus }
+        ],
+      },
+      {
+        title: "DevOps",
+        icons: [
+          { name: "Docker", icon: FaDocker },
+          { name: "Kubernetes", icon: SiKubernetes },
+          { name: "GitHub Actions", icon: AiOutlineGitlab },
+          { name: "Jenkins", icon: SiJenkins }
+        ],
+      },
+      {
+        title: "Testing",
+        icons: [
+          { name: "Cypress", icon: SiCypress },
+          { name: "Selenium", icon: SiSelenium },
+          { name: "JUnit", icon: DiDatabase }
+        ],
+      },
+      {
+        title: "Databases & BaaS",
+        icons: [
+          { name: "Firebase", icon: SiFirebase },
+          { name: "Supabase", icon: SiSupabase }
+        ],
       }
     ],
   },
@@ -57,17 +93,13 @@ export const aboutData = [
         title: "National Science Bowl Islamabad Winners",
         stage: "2020",
       },
-      // {
-      //   title: "Adobe Design Achievement Awards - Finalist",
-      //   stage: "2009 - 2010",
-      // },
     ],
   },
   {
     title: "experience",
     info: [
       {
-        title: "Flutter Dev - Cognitive Healthcare International",
+        title: "Flutter Developer - Cognitive Healthcare International",
         stage: "2022",
       },
       {
@@ -84,16 +116,12 @@ export const aboutData = [
     title: "credentials",
     info: [
       {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
+        title: "Full Stack Development - Code with Mosh, CHI",
+        stage: "2023",
       },
       {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
-      },
-      {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
+        title: "Mobile Development - SimpliLearn, CHI",
+        stage: "2022",
       },
     ],
   },
@@ -103,7 +131,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+    <div className="h-full bg-black/60 py-32 text-center xl:text-left">
       <Circles />
 
       {/* avatar img */}
@@ -136,9 +164,9 @@ const About = () => {
             animate="show"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            1 years ago, I begin freelancing as a developer. Since then, I've
+            1 year ago, I began freelancing as a developer. Since then, I've
             done remote work for agencies, consulted for startups, and
-            collabrated on digital products for business and consumer use.
+            collaborated on digital products for business and consumer use.
           </motion.p>
 
           {/* counters */}
@@ -228,11 +256,15 @@ const About = () => {
 
                 <div className="flex gap-x-4">
                   {/* icons */}
-                  {item.icons?.map((Icon, iconI) => (
-                    <div key={iconI} className="text-2xl text-white">
-                      <Icon />
-                    </div>
-                  ))}
+                  {item.icons?.map((iconItem, iconI) => {
+                    const IconComponent = iconItem.icon;
+                    return (
+                      <div key={iconI} className="text-xl text-white tooltip">
+                        <IconComponent />
+                        <span className="tooltiptext">{iconItem.name}</span>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             ))}
