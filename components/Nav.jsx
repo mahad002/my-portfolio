@@ -26,6 +26,7 @@ export const navData = [
     name: "contact",
     path: "/contact",
     Icon: HiEnvelope,
+    
   },
 ];
 
