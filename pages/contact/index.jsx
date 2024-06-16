@@ -135,7 +135,7 @@ const Contact = () => {
             {/* WhatsApp Mahad */}
             <button
               className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent"
-              onClick={() => handleRedirect("https://wa.me/923150144044")}
+              onClick={() => handleRedirect("https://wa.me/923105589303")}
             >
               <FaWhatsapp className="text-[22px] text-green-500" />
               <BsArrowRight className="ml-2 text-[22px]" />
@@ -205,7 +205,7 @@ const Contact = () => {
             {/* WhatsApp Wajeeh */}
             <button
               className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent"
-              onClick={() => handleRedirect("https://wa.me/923105589303")}
+              onClick={() => handleRedirect("https://wa.me/923150144044")}
             >
               <FaWhatsapp className="text-[22px] text-green-500" />
               <BsArrowRight className="ml-2 text-[22px]" />
