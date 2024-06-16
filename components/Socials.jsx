@@ -9,37 +9,53 @@ import {
   RiPinterestLine,
 } from "react-icons/ri";
 
+import {
+  FaLinkedin,
+  FaEnvelope,
+} from "react-icons/fa";
+
 export const socialData = [
+  // {
+  //   name: "YouTube",
+  //   link: "http://youtube.com/@mahad.08",
+  //   Icon: RiYoutubeLine,
+  // },
   {
-    name: "YouTube",
-    link: "http://youtube.com/@mahad.08",
-    Icon: RiYoutubeLine,
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/company/ensemble-ai-co",
+    Icon: FaLinkedin,
   },
   {
     name: "Instagram",
-    link: "https://instagram.com/mahad.08",
+    // link: "https://instagram.com/mahad.08",
+    link: "https://www.instagram.com/ensembleaico1",
     Icon: RiInstagramLine,
   },
   {
-    name: "Facebook",
-    link: "https://facebook.com",
-    Icon: RiFacebookLine,
+    name: "Email",
+    link: "mailto:ensembleaico1@gmail.com",
+    Icon: FaEnvelope,
   },
-  {
-    name: "Dribbble",
-    link: "https://dribbble.com",
-    Icon: RiDribbbleLine,
-  },
-  {
-    name: "Pinterest",
-    link: "https://pinterest.com",
-    Icon: RiPinterestLine,
-  },
-  {
-    name: "Github",
-    link: "https://github.com/mahad002",
-    Icon: RiGithubLine,
-  },
+  // {
+  //   name: "Facebook",
+  //   link: "https://facebook.com",
+  //   Icon: RiFacebookLine,
+  // },
+  // {
+  //   name: "Dribbble",
+  //   link: "https://dribbble.com",
+  //   Icon: RiDribbbleLine,
+  // },
+  // {
+  //   name: "Pinterest",
+  //   link: "https://pinterest.com",
+  //   Icon: RiPinterestLine,
+  // },
+  // {
+  //   name: "Github",
+  //   link: "https://github.com/mahad002",
+  //   Icon: RiGithubLine,
+  // },
 ];
 
 const Socials = () => {

@@ -7,7 +7,7 @@ const Avatar = () => {
         src="/img2.png" ///img2.png
         alt="img1"
         width={737}
-        height={700}
+        height={650}
         className="translate-z-0 w-2/3 h-2/3"
       />
     </div>

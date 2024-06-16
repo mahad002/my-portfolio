@@ -20,7 +20,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h1"
+            className="h1 mt-8"
           >
             Transforming Ideas <br /> Into{" "}
             <span className="text-accent">Digital Reality</span>
@@ -34,11 +34,15 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            A Highly Motivated Software Engineer, who loves Tech! <br/><br/>
+            {/* A Highly Motivated Software Engineer, who loves Tech! <br/><br/>
             &nbsp;&nbsp;&nbsp;Passionate and innovative problem solver. <br/>
             &nbsp;&nbsp;&nbsp;Quick learner, team player, and creative thinker. <br/>
             &nbsp;&nbsp;&nbsp;Committed to quality and positive impact. <br/>
-            &nbsp;&nbsp;&nbsp;2+ years of experience in diverse projects. <br/><br/>
+            &nbsp;&nbsp;&nbsp;2+ years of experience in diverse projects. <br/><br/> */}
+            We are a team of over 100 IT professionals offering services in more than 1000 technologies. 
+            Our expertise includes edge AI, large language models (LLMs), AI automations, web development, 
+            and app development, among other areas. We cater to a wide range of industries and provide 
+            tailored solutions to meet diverse technological needs.
 
             {/* My Skills:<br/>
             &nbsp;&nbsp;&nbsp;Proficient in Flutter, ReactJS, Angular, NextJS, Node/Express, HTML, <br/>
@@ -46,7 +50,7 @@ const Home = () => {
             &nbsp;&nbsp;&nbsp;Odoo, Java, Python, C/C++, Docker, Kubernetes, GitHub Actions, <br/>
             &nbsp;&nbsp;&nbsp;Jenkins, Cypress, Selenium, JUnit, Figma.<br/><br/> */}
             
-            Thank you!
+            {/* Thank you! */}
         </motion.p>
 
 
@@ -70,7 +74,7 @@ const Home = () => {
         {/* bg img */}
         <div
           role="img"
-          className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"
+          className="bg-none xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"
           aria-hidden
         />
 
@@ -78,7 +82,7 @@ const Home = () => {
         <ParticlesContainer />
 
         {/* avatar */}
-        <motion.div
+        {/* <motion.div
           variants={fadeIn("up", 0.5)}
           initial="hidden"
           animate="show"
@@ -87,7 +91,7 @@ const Home = () => {
           className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]"
         >
           <Avatar />
-        </motion.div>
+        </motion.div> */}
       </div>
     </div>
   );
