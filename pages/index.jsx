@@ -33,7 +33,7 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            We are a team of over 100 IT professionals offering services in more than 1000 technologies. 
+            We are a team of over 50 IT professionals offering services in more than 500 technologies. 
             Our expertise includes edge AI, large language models (LLMs), AI automations, web development, 
             and app development, among other areas. We cater to a wide range of industries and provide 
             tailored solutions to meet diverse technological needs.
