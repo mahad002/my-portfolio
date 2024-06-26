@@ -13,10 +13,10 @@ const Contact = () => {
   };
 
   return (
-    <div className="h-full bg-black/60">
-      <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
+    <div className="h-full pt-0">
+      <div className="container mx-auto py-32 text-center xl:text-left flex xl:flex-row flex-col items-center justify-center ustify-space-between h-full">
         {/* Official Ensemble AI */}
-        <div className="flex flex-col w-full max-w-[700px]">
+        <div className="flex flex-col w-full max-w-[700px] pb-10">
           {/* Official Ensemble AI heading */}
           <motion.h2
             variants={fadeIn("up", 0.2)}
@@ -38,18 +38,19 @@ const Contact = () => {
           >
             {/* Instagram */}
             <button
-              className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent"
+              className="btn rounded-full border border-white/50 max-w-[300px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent"
               onClick={() =>
                 handleRedirect("https://www.instagram.com/ensembleaico1/")
               }
             >
               <FaInstagram className="text-[22px] text-pink-500" />
+              &nbsp;Instagram
               <BsArrowRight className="ml-2 text-[22px]" />
             </button>
 
             {/* LinkedIn */}
             <button
-              className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent"
+              className="btn rounded-full border border-white/50 max-w-[300px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent"
               onClick={() =>
                 handleRedirect(
                   "https://www.linkedin.com/company/ensemble-ai-co"
@@ -57,17 +58,19 @@ const Contact = () => {
               }
             >
               <FaLinkedin className="text-[22px] text-blue-500" />
+              &nbsp;LinkedIn
               <BsArrowRight className="ml-2 text-[22px]" />
             </button>
 
             {/* Email */}
             <button
-              className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent"
+              className="btn rounded-full border border-white/50 max-w-[300px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent"
               onClick={() =>
                 handleRedirect("mailto:ensembleaico1@gmail.com")
               }
             >
               <FaEnvelope className="text-[22px] text-red-500" />
+              &nbsp;Email
               <BsArrowRight className="ml-2 text-[22px]" />
             </button>
           </motion.div>
@@ -77,7 +80,7 @@ const Contact = () => {
         <div className="border-l-2 border-gray-400 h-[200px] mx-12 hidden xl:block"></div>
 
         {/* Co-Founders */}
-        <div className="flex flex-col w-full max-w-[700px]">
+        <div className="flex flex-col w-full max-w-[700px] pb-10">
           {/* Co-Founders heading */}
           <motion.h2
             variants={fadeIn("up", 0.6)}
@@ -99,18 +102,19 @@ const Contact = () => {
           >
             {/* Instagram Mahad */}
             <button
-              className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent"
+              className="btn rounded-full border border-white/50 max-w-[3000px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent"
               onClick={() =>
                 handleRedirect("https://www.instagram.com/mahad.08/")
               }
             >
               <FaInstagram className="text-[22px] text-pink-500" />
+              &nbsp;Instagram
               <BsArrowRight className="ml-2 text-[22px]" />
             </button>
 
             {/* LinkedIn Mahad */}
             <button
-              className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent"
+              className="btn rounded-full border border-white/50 max-w-[300px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent"
               onClick={() =>
                 handleRedirect(
                   "https://www.linkedin.com/in/muhammad-mahad-sheikh-989a2924b/"
@@ -118,26 +122,29 @@ const Contact = () => {
               }
             >
               <FaLinkedin className="text-[22px] text-blue-500" />
+              &nbsp;LinkedIn
               <BsArrowRight className="ml-2 text-[22px]" />
             </button>
 
             {/* Email Mahad */}
             <button
-              className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent"
+              className="btn rounded-full border border-white/50 max-w-[300px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent"
               onClick={() =>
                 handleRedirect("mailto:mahad112002@gmail.com")
               }
             >
               <FaEnvelope className="text-[22px] text-red-500" />
+              &nbsp;Email
               <BsArrowRight className="ml-2 text-[22px]" />
             </button>
 
             {/* WhatsApp Mahad */}
             <button
-              className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent"
+              className="btn rounded-full border border-white/50 max-w-[300px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent"
               onClick={() => handleRedirect("https://wa.me/923105589303")}
             >
               <FaWhatsapp className="text-[22px] text-green-500" />
+              &nbsp;Whatsapp
               <BsArrowRight className="ml-2 text-[22px]" />
             </button>
           </motion.div>
@@ -147,7 +154,7 @@ const Contact = () => {
         <div className="border-l-2 border-gray-400 h-[200px] mx-12 hidden xl:block"></div>
 
         {/* Co-Founder Wajeeh */}
-        <div className="flex flex-col w-full max-w-[700px]">
+        <div className="flex flex-col w-full max-w-[700px] pb-10">
           {/* Co-Founder Wajeeh heading */}
           <motion.h2
             variants={fadeIn("up", 1.0)}
@@ -169,18 +176,19 @@ const Contact = () => {
           >
             {/* Instagram Wajeeh */}
             <button
-              className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent"
+              className="btn rounded-full border border-white/50 max-w-[300px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent"
               onClick={() =>
                 handleRedirect("https://www.instagram.com/wajeehulhassanr/")
               }
             >
               <FaInstagram className="text-[22px] text-pink-500" />
+              &nbsp;Instagram
               <BsArrowRight className="ml-2 text-[22px]" />
             </button>
 
             {/* LinkedIn Wajeeh */}
             <button
-              className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent"
+              className="btn rounded-full border border-white/50 max-w-[300px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent"
               onClick={() =>
                 handleRedirect(
                   "https://www.linkedin.com/in/wajeehulhassanr"
@@ -188,26 +196,29 @@ const Contact = () => {
               }
             >
               <FaLinkedin className="text-[22px] text-blue-500" />
+              &nbsp;LinkedIn
               <BsArrowRight className="ml-2 text-[22px]" />
             </button>
 
             {/* Email Wajeeh */}
             <button
-              className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent"
+              className="btn rounded-full border border-white/50 max-w-[300px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent"
               onClick={() =>
                 handleRedirect("mailto:wajeehulhassanr@gmail.com")
               }
             >
               <FaEnvelope className="text-[22px] text-red-500" />
+              &nbsp;Email
               <BsArrowRight className="ml-2 text-[22px]" />
             </button>
 
             {/* WhatsApp Wajeeh */}
             <button
-              className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent"
+              className="btn rounded-full border border-white/50 max-w-[300px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent"
               onClick={() => handleRedirect("https://wa.me/923150144044")}
             >
               <FaWhatsapp className="text-[22px] text-green-500" />
+              &nbsp;Whatsapp
               <BsArrowRight className="ml-2 text-[22px]" />
             </button>
           </motion.div>

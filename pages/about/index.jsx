@@ -1,18 +1,16 @@
-
-
 import { motion } from "framer-motion";
 import { useState } from "react";
 import CountUp from "react-countup";
-import 'react-tooltip/dist/react-tooltip.css'
-import { Tooltip as ReactTooltip } from 'react-tooltip'
+import 'react-tooltip/dist/react-tooltip.css';
+import { Tooltip as ReactTooltip } from 'react-tooltip';
 import { RiFlutterFill, RiVuejsLine } from "react-icons/ri";
 import { IoLogoFirebase } from "react-icons/io5";
 import { FaHtml5, FaCss3, FaJs, FaReact, FaWordpress, FaFigma, FaDocker, FaJava, FaPython, 
-  FaNodeJs, FaAngular, FaSketch, FaInvision, FaSwift, FaPhp, FaLaravel, FaAws, FaMicrosoft,
- FaGoogle, } from "react-icons/fa";
+  FaNodeJs, FaAngular, FaSketch, FaInvision, FaSwift, FaPhp, FaLaravel, FaAws, FaMicrosoft, 
+  FaGoogle, } from "react-icons/fa";
 import { FaBootstrap } from "react-icons/fa6";
 import { SiNextdotjs, SiFramer, SiAdobelightroom, SiAdobephotoshop, SiCanva, SiMysql, SiPostgresql, SiCplusplus, SiFirebase, SiSupabase, 
-  SiKubernetes, SiJenkins, SiSelenium, SiCypress, SiExpress, SiTailwindcss, SiKotlin, SiRubyonrails, SiTerraform, SiMocha,
+  SiKubernetes, SiJenkins, SiSelenium, SiCypress, SiExpress, SiTailwindcss, SiKotlin, SiRubyonrails, SiTerraform, SiMocha, 
   SiJest, SiMongodb, SiRedis, SiAmazondynamodb, SiTensorflow, SiPytorch, SiScikitlearn, SiKeras, SiOpenai, SiIbm } from "react-icons/si";
 import { DiDatabase } from "react-icons/di";
 import { AiOutlineGitlab } from "react-icons/ai";
@@ -131,15 +129,6 @@ export const aboutData = [
       }
     ]
   },
-  // {
-  //   "title": "awards",
-  //   "info": [
-  //     {
-  //       "title": "National Science Bowl Islamabad Winners",
-  //       "stage": "2020"
-  //     }
-  //   ]
-  // },
   {
     title: "Our Journey",
     info: [
@@ -161,27 +150,13 @@ export const aboutData = [
       }
     ]
   }
-  // {
-  //   "title": "credentials",
-  //   "info": [
-  //     {
-  //       "title": "Full Stack Development - Code with Mosh, CHI",
-  //       "stage": "2023"
-  //     },
-  //     {
-  //       "title": "Mobile Development - SimpliLearn, CHI",
-  //       "stage": "2022"
-  //     }
-  //   ]
-  // }
-  
 ];
 
 const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="h-full bg-black/60 py-32 text-center xl:text-left">
+    <div className="h-full xl:py-16 py-20 text-center xl:text-left">
       <Circles />
 
       {/* avatar img */}
@@ -192,7 +167,7 @@ const About = () => {
         exit="hidden"
         className="hidden xl:flex absolute bottom-0 -left-[370px]"
       >
-        <Avatar />
+        {/* <Avatar /> */}
       </motion.div>
 
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
@@ -276,16 +251,22 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
+          className="flex flex-col w-full xl:max-w-[48%] h-[480px] xl:mb-0 mb-64"
         >
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemI) => (
               <button
                 key={itemI}
-                // className={`${
-                //   index === itemI &&
-                //   "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
-                // } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
+                onClick={() => setIndex(itemI)}
+              >
+                <span className="block"></span>
+              </button>
+            ))}
+          </div>
+          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
+            {aboutData.map((item, itemI) => (
+              <button
+                key={itemI}
                 onClick={() => setIndex(itemI)}
               >
                 <span className="block"></span>
@@ -294,7 +275,6 @@ const About = () => {
           </div>
           <div
             className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 pointer-events: none"
-            // onClick={() => setIndex(itemI)}
           >
             {aboutData.map((item, itemI) => (
               <div
@@ -320,7 +300,7 @@ const About = () => {
                 <div className="hidden md:flex">-</div>
                 <div>{item.stage}</div>
 
-                <div className="flex gap-x-4">
+                <div className="flex flex-wrap gap-x-4 justify-center">
                   {/* icons */}
                   {item.icons?.map((iconItem, iconI) => {
                     const IconComponent = iconItem.icon;

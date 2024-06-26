@@ -74,6 +74,13 @@
   opacity: 1;
 }
 
+.scrollable-container {
+  min-height: 100vh; /* Ensure the container takes at least the full height of the viewport */
+  overflow-y: auto; /* Enable vertical scrolling */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange children in a column */
+}
+
 
 @layer base {
   body {

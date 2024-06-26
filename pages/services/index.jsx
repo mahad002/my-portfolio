@@ -9,7 +9,7 @@ export const serviceData = [];
 
 const Services = () => {
   return (
-    <div className="h-full bg-black/60 py-36 flex items-center">
+    <div className="h-full py-36 flex items-center">
       <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
@@ -20,7 +20,7 @@ const Services = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h2 xl:mt-8"
+              className="h1 xl:mt-8"
             >
               Our services <span className="text-accent">.</span>
             </motion.h2>

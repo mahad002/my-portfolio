@@ -5,7 +5,7 @@ import { fadeIn } from "../../variants";
 
 const Testimonials = () => {
   return (
-    <div className="h-full bg-blAck/60 py-32 text-center">
+    <div className="h-full py-32 text-center">
       <div className="container mx-auto h-full flex flex-col justify-center">
 
         <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0 mt-16">
