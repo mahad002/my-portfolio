@@ -9,7 +9,7 @@ import { fadeIn } from "../variants";
 
 const Home = () => {
   return (
-    <div className="scrollable-container bg-black/60">
+    <div className="scrollable-container">
       {/* text */}
       <div className="w-full flex-grow bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
         <div className="text-center flex flex-col justify-center xl:pt-[150] xl:text-left min-h-screen container mx-auto pt-[100px]">
