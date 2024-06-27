@@ -13,7 +13,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="h-full pt-0">
+    <div className="h-full pt-0 ">
       <div className="container mx-auto py-32 text-center xl:text-left flex xl:flex-row flex-col items-center justify-center ustify-space-between h-full">
         {/* Official Ensemble AI */}
         <div className="flex flex-col w-full max-w-[700px] pb-10">
